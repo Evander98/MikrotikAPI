@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Receipt</title>
+    <style>
+        .container {
+            width: 56mm;
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center style="padding: 5px">
+            <div style="margin-bottom: 5px">{{server}}</div>
+            <div style="font-size: 25px; font-weight: bold; margin-bottom: 5px">UPT PTI</div>
+            <div style="padding-bottom: 5px; border-bottom: 1px solid black">
+                {{date}}&nbsp;&nbsp;&nbsp;{{time}}
+            </div>
+            <div style="margin-bottom: 5px">
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td>Password</td>
+                    </tr>
+                    <tr>
+                        <td>{{username}}</td>
+                        <td>{{password}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="border-top: 1px solid black;">
+                <p>Login : http://hs.login</p>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
+<script>
+window.print()
+</script>
